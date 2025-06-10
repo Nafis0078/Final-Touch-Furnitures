@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Final Touch Furniture</title>
+  <link rel="stylesheet" href="sofas.css" />
+</head>
+<body>
+
+
+
+  <section class="furniture-types">
+    <h2>Explore Sofa</h2>
+      <div class="card-container">
+        <img src="images/sofa_bk2.jpeg" alt="Recliner Sofa" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="dropdown-section">
+    <label for="sofa-types">Choose a Sofa Type:</label>
+    <select id="sofa-types" onchange="showSofaOptions()">
+      <option value="">-- Select Sofa Type --</option>
+      <option value="recliner">Recliner Sofa</option>
+      <option value="sectional">Sectional Sofa</option>
+      <option value="loveseat">Loveseat Sofa</option>
+    </select>
+  </section>
+
+  <section id="sofa-display" class="sofa-container hidden">
+    <h2 id="sofa-title"></h2>
+    <div class="card-container" id="sofa-options"></div>
+  </section>
+
+  <script src="sofas.js"></script>
+
+<div id="sofa-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h3 id="modal-title">Sofa Image</h3>
+    <img id="modal-img" src="" alt="Sofa Image" />
+    <p id="modal-price"></p>
+
+    
+    <div id="buy-now-container" class="mt-4">
+  <button id="buy-now-btn" class="bg-green-500 text-white px-4 py-2 rounded">Buy Now</button>
+  <div id="buy-options" class="mt-2 space-x-2 hidden">
+    <button id="call-btn" class="bg-blue-500 text-white px-3 py-1 rounded">📞 Call</button>
+    <button id="whatsapp-btn" class="bg-green-600 text-white px-3 py-1 rounded">💬 WhatsApp</button>
+  </div>
+</div>
+
+
+    <p id="modal-description"></p>
+    <div id="modal-gallery"></div>
+  </div>
+</div>
+</body>
+</html>
